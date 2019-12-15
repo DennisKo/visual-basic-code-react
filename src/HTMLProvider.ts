@@ -44,7 +44,7 @@ export default class HTMLProvider {
       path.join(path.dirname(this.workingDir), relativePath)
     );
     const webViewResFile = this.webview.asWebviewUri(filePath);
-    return webViewResFile.path;
+    return path.normalize(webViewResFile.path);
   };
 
   private fixLinks = (): string => {

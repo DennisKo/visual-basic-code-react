@@ -10,14 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.visualBasicCodeReact"
+    "onCommand:extension.visualBasicCodeReact",
+    "onCommand:extension.visualBasicCodeReactCreateProject"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "extension.visualBasicCodeReact",
-        "title": "Visual Basic Code React"
+        "title": "Visual Basic Code React Preview"
+      },
+      {
+        "command": "extension.visualBasicCodeReactCreateProject",
+        "title": "Create Visual Basic Code React Project"
       }
     ]
   },
